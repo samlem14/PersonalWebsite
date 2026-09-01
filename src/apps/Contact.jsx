@@ -6,7 +6,7 @@ export default function Contact() {
       <dl className="w95-dl">
         <dt>Email</dt>
         <dd>
-          <a href="contactsamlemme@gmail.com">you@example.com</a>
+          <a href="contactsamlemme@gmail.com">ContactSamLemme@gmail.com</a>
         </dd>
 
         <dt>LinkedIn</dt>
