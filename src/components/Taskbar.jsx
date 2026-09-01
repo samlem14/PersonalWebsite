@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { apps } from '../apps/registry.jsx';
+import { Logo } from '@react95/icons';
 
 function Clock() {
   const [now, setNow] = useState(new Date());
@@ -67,9 +68,7 @@ export default function Taskbar({ windows, focusedId, onOpen, onTaskClick }) {
           className={`w95-start-button${startOpen ? ' is-pressed' : ''}`}
           onClick={() => setStartOpen((v) => !v)}
         >
-          <span className="w95-flag" aria-hidden="true">
-            <i /><i /><i /><i />
-          </span>
+		<Logo variant="32x32_4" />
           Start
         </button>
 

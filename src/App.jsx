@@ -109,6 +109,11 @@ export default function App() {
         if (e.target.classList.contains('w95-desktop')) setSelectedIcon(null);
       }}
     >
+      <div className="w95-nameplate">
+        <span>Sam</span>
+        <span>Lemme</span>
+      </div>
+
       <div className="w95-icon-grid">
         {apps
           .filter((a) => a.onDesktop !== false)

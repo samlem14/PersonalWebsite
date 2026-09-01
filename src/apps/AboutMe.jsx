@@ -8,39 +8,36 @@ export default function AboutMe() {
     <div className="doc">
       <h1>Sam Lemme</h1>
       <p className="subtitle">Associate VFX Producer, Haymaker VFX</p>
-
+	  
       <hr />
 	  
       <figure className="doc-figure">
         <img src={headshot} alt="Sam and Minx" />
-        <figcaption>Los Angeles, 2025</figcaption>
+        <figcaption>Sam and Minx</figcaption>
       </figure>
 
       <p>
-        I produce visual effects for episodic television, features, and
+		A visual effects producer for episodic television, features, and
         large-format immersive work. Day to day that means scheduling and
-        bidding shots, running client reviews, and keeping the pipeline
-        honest between Gothenburg and Los Angeles.
+        bidding shots, running client reviews, and always keeping the pipeline
+        honest.
       </p>
 
       <p>
-        I also build the tooling around the work: Flow Production Tracking
-        automation, Google Apps Script reporting, and AutoHotkey utilities
+        He can also build the tooling around the work: Flow Production Tracking
+        automation, Google Apps Script reporting, and other utilities
         that take the tedium out of delivery days.
       </p>
+	  
+      <hr />
 
       <h2>What I work on</h2>
       <ul>
         <li>Shot scheduling, bidding, and vendor coordination</li>
         <li>Flow Production Tracking configuration and automation</li>
         <li>Client-facing delivery communication</li>
-        <li>Pipeline scripting in Python and Apps Script</li>
       </ul>
 
-      <h2>Elsewhere</h2>
-      <p>
-        Open the other icons on the desktop for credits and contact details.
-      </p>
     </div>
   );
 }

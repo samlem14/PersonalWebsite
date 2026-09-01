@@ -412,18 +412,12 @@ body {
   display: block;
 }
 
-.w95-flag {
-  display: grid;
-  grid-template-columns: 7px 7px;
-  grid-template-rows: 7px 7px;
-  gap: 1px;
-  transform: skewX(-8deg);
+.w95-start-button svg {
+  width: 25px;
+  height: 25px;
+  display: block;
+  flex: none;
 }
-
-.w95-flag i:nth-child(1) { background: #ff0000; }
-.w95-flag i:nth-child(2) { background: #00a000; }
-.w95-flag i:nth-child(3) { background: #0000ff; }
-.w95-flag i:nth-child(4) { background: #f0c000; }
 
 .w95-tray {
   display: grid;
@@ -527,7 +521,32 @@ body {
   font-size: 11px;
   text-align: center;
 }
+.w95-start-button > * {
+  width: 16px;
+  height: 16px;
+  flex: none;
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
 
+.w95-nameplate {
+  position: absolute;
+  right: 16px;
+  bottom: calc(var(--w95-taskbar-h) + 8px);
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+}
 /* --- Small screens -------------------------------------------------- */
 
 @media (max-width: 640px) {
@@ -537,7 +556,10 @@ body {
     width: calc(100% - 8px) !important;
     height: calc(100% - var(--w95-taskbar-h) - 12px) !important;
   }
-
+.w95-nameplate {
+    font-size: 32px;
+    right: 12px;
+  }
   .w95-task-button {
     min-width: 0;
   }

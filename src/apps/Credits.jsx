@@ -1,10 +1,10 @@
 const credits = [
-  { title: 'Fallout', year: '2025', role: 'VFX Production', type: 'Series' },
-  { title: 'Will Trent', year: '2024', role: 'VFX Production', type: 'Series' },
-  { title: 'NCIS', year: '2024', role: 'VFX Production', type: 'Series' },
-  { title: 'Megalopolis', year: '2024', role: 'VFX Production', type: 'Feature' },
-  { title: 'Madame Web', year: '2024', role: 'VFX Production', type: 'Feature' },
-  { title: 'Unfrosted', year: '2024', role: 'VFX Production', type: 'Feature' },
+  { title: 'Wizard of Oz at Sphere', year: '2025', type: 'Immersive' },
+  { title: 'Will Trent', year: '2024', type: 'Series' },
+  { title: 'Megalopolis', year: '2024', type: 'Feature' },
+  { title: 'Madame Web', year: '2024', type: 'Feature' },
+  { title: 'Unfrosted', year: '2024', type: 'Feature' },
+  { title: 'The Marvels', year: '2023', type: 'Feature' },
 ];
 
 export default function Credits() {
@@ -18,7 +18,6 @@ export default function Credits() {
             <th>Title</th>
             <th>Year</th>
             <th>Type</th>
-            <th>Role</th>
           </tr>
         </thead>
         <tbody>
@@ -27,7 +26,6 @@ export default function Credits() {
               <td>{c.title}</td>
               <td>{c.year}</td>
               <td>{c.type}</td>
-              <td>{c.role}</td>
             </tr>
           ))}
         </tbody>

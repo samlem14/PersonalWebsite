@@ -31,7 +31,7 @@
 import AboutMe from './AboutMe.jsx';
 import Credits from './Credits.jsx';
 import Contact from './Contact.jsx';
-import { Inetcpl1312, Awfxex32Info, Progman16, Awfxcg321304 } from '@react95/icons';
+import { Inetcpl1312, Awfxex32Info, Progman16, Awfxcg321304, Msrating107 } from '@react95/icons';
 
 
 import {
@@ -66,7 +66,15 @@ export const apps = [
     icon: Inetcpl1312,
     kind: 'link',
     // Replace with your own IMDb name page.
-    url: 'https://www.imdb.com/name/nm0000000/',
+    url: 'https://www.imdb.com/name/nm12425433/',
+  },
+  {
+    id: 'Twitch',
+    title: 'My Stream',
+    icon: Msrating107,
+    kind: 'link',
+    // Replace with your own IMDb name page.
+    url: 'https://www.twitch.tv/samlem14',
   },
   {
     id: 'contact',
