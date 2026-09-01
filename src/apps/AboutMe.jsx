@@ -1,7 +1,7 @@
 // Each "app" is just a React component. Whatever you return here gets
 // rendered inside the window body. Plain HTML works, and so does any
 // React95 component.
-import headshot from "C:\Users\sammy\personal-website\src\Assets\headshot.jpg";
+import headshot from '../assets/headshot.jpg';
 
 export default function AboutMe() {
   return (
